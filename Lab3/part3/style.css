@@ -5,41 +5,160 @@
 }
 
 body {
+  /* Center the page horizontally */
   margin: 0 auto;
+  /* Set a minimum width for page */
   min-width: 1000px;
+  /* Set a maximum width for page */
   max-width: 1400px;
 }
 
 /* Layout */
 
 section {
+  /* Float the section to the left */
   float: left;
+  /* width of container */
   width: 50%;
 }
 
 aside {
+  /* Float the aside to the left */
   float: left;
+  /* width of container */
   width: 30%;
 }
 
 nav {
+  /* Float the nav to the left */
   float: left;
+  /* width of container */
   width: 20%;
 }
+
 
 footer {
   clear: both;
 }
 
+
 header, section, aside, nav, footer {
+  /* add padding */
   padding: 20px;
 }
 
 /* header and footer */
-
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+/* Fonts */
+
+@font-face {
+  font-family: 'font1';
+  src: url(font/font1.ttf)format(TrueType);
+}
+
+@font-face {
+  font-family: 'font';
+  src: url(font/font.ttf)format(TrueType);
+}
+
+html
+{
+  font-family: 'Font1';
+}
+
+/* Set fonts for h1,h2*/
+h1, h2
+{
+  font-family: 'Font';
+}
+
+html
+
+/* add font size */
+{
+  font-size: 16px;
+}
+
+/* set the line height for paragraphs and list items */
+p, li
+{
+  line-height: 1.5;
+}
+
+/* Center -align h1 element */
+h1
+{
+  text-align: center;
+
+}
+
+
+h1, h2, p, li
+/* Add latter spacing to these element*/
+{
+  letter-spacing: 1px;
+}
+
+h1 + p, h2 + p
+/* Add an indent after h1 and h2 followed by the paragraph */
+{
+  text-indent: 20px;
+}
+
+a, a:visited, a:focus, a:hover
+/* Set link color to #a66 for different states */
+{
+  color: #a66;
+  text-decoration: none;
+
+}
+
+a:hover, a:focus
+/* Underline links on hover or focus */
+
+{
+  text-decoration: underline;
+}
+
+
+a{
+  outline: none;
+}
+
+
+/* Use square bullets for unordered lists */
+ul{
+  list-style-type: square;
+}
+
+/* Use lowercase alphabetical ordering for ordered lists */
+ol{
+  list-style-type: lower-alpha;
+}
+
+/* Navigation list styling*/
+nav ul li {
+  padding: 0; 
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  border:#a66 2px solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Navigation link styling */
+nav a, nav a :visited{
+  color: #a66;
+  text-decoration: underline;
+  color: #f00;
+}
+
+/* Section link icon */
+section p a::after{
+  content: url(external-link-52.png);
+}
