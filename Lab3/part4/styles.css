@@ -1,15 +1,19 @@
+/* Set the background color, text color, and font for the entire page */
+
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    background-color: #fff; /* white background */
+    color: #333; /* Dark gray text color */
+    margin: 0; /*Reset default margin*/
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif; /* Set font property*/
   }
 
+  /* Design styles for the images */
   img {
-      max-width: 100%;
+      max-width: 100%; 
       display: block;
   }
   
+  /* give Styling to the logo section */
   .logo {
     font-size: 200%;
     padding: 50px 20px;
@@ -17,6 +21,7 @@ body {
     max-width: 980px;
   }
   
+  /* grid for the main content*/
   .grid {
     margin: 0 auto;
     padding: 0 20px;
@@ -26,6 +31,7 @@ body {
     gap: 20px;
   }
   
+  /* style for the navigation bar */
   nav {
 
     background-color: #000;
@@ -34,6 +40,7 @@ body {
     position: sticky;
   }
   
+  /* Style the list inside of the navigation bar*/
   nav ul {
     margin: 0;
     padding: 0;
@@ -42,12 +49,14 @@ body {
     justify-content: space-between;
   }
   
+  /* Give Style the links */
   nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
   }
   
+  /* Give style to the photo grid in the aside */
   .photos {
     list-style: none;
     margin: 0;
@@ -57,6 +66,7 @@ body {
     gap: 1px;
   }
 
+  /* Give style to feature images in the artical */
   .feature {
       width: 200px;
       float: left;
