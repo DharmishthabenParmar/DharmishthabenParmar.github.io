@@ -23,3 +23,11 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
+/* Styling for a supplementary paragraph (p) */
+p {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaa; /* Setting a light gray color for the text */
+}
