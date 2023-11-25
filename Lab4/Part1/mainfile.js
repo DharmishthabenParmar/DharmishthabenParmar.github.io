@@ -29,7 +29,7 @@ zItem = randomValueFromArray(insertZ);
 newStory = newStory.replace(":insertx:",xItem);
 newStory = newStory.replace(":inserty:",yItem);
 newStory = newStory.replace(":insertz:",zItem);
-
+newStory = newStory.replace(":insertx:",xItem);
    // Replace "Bob" with a custom name if provided
   if(customName.value != '') {
     var name = customName.value;
