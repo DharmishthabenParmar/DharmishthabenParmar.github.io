@@ -90,7 +90,9 @@ while (balls.length < 25) {
 // Function to continuously update and render the animation
 function loop() {
    ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
+
    ctx.fillRect(0, 0,  width, height);
+   
    // Draw, update, and check for collisions for each ball
    for (const ball of balls) {
      ball.draw();
