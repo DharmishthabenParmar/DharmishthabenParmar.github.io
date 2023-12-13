@@ -1,15 +1,18 @@
 /* || General setup */
 
+/* Resetting margins and paddings for consistent styling */
 html, body {
   margin: 0;
   padding: 0;
 }
 
+/* Setting base font size and background color for the entire document */
 html {
   font-size: 10px;
   background-color: #dde;
 }
 
+/* Setting overall width, minimum width, and centering the content */
 body {
   width: 80%;
   min-width: 1024px;
@@ -18,16 +21,19 @@ body {
 
 /* || typography */
 
-h1,h2,h3{
+/* Styling headings with specific fonts, colors, and shadows */
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
 
+/* Styling text elements with a consistent font and color */
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
+/* Specific styling for the main heading (h1) */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -35,15 +41,17 @@ h1 {
   text-shadow: 2px 2px 10px black;
 }
 
+/* Styling for various heading levels */
 h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 2.2rem;
 }
 
+/* Styling paragraphs, list items, and tables */
 p, li, table {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -51,18 +59,22 @@ p, li, table {
 
 /* || header layout */
 
+/* Styling header elements with a white background */
 nav, article, footer, .secondary {
-  background-color:white;
+  background-color: white;
 }
 
+/* Adding padding to article, footer, and secondary sections */
 article, footer, .secondary {
   padding: 10px 30px;
 }
 
+/* Additional margin for the article section */
 article {
   margin-right: 10px;
 }
 
+/* Styling navigation bar */
 nav {
   height: 50px;
   display: flex;
@@ -70,6 +82,7 @@ nav {
   margin-bottom: 10px;
 }
 
+/* Styling navigation list and items */
 nav ul {
   padding: 0;
   list-style-type: none;
@@ -83,6 +96,7 @@ nav li {
   flex: 1;
 }
 
+/* Styling navigation links */
 nav a {
   display: inline-block;
   font-size: 2rem;
@@ -91,6 +105,7 @@ nav a {
   color: black;
 }
 
+/* Styling the search form within the navigation */
 nav .search {
   flex: 1;
   display: flex;
@@ -118,10 +133,12 @@ nav .search {
 
 /* || main layout */
 
+/* Styling the main content area with flex display */
 main {
   display: flex;
 }
 
+/* Setting flex ratios for article and secondary sections */
 article {
   flex: 5;
 }
@@ -130,73 +147,88 @@ article {
   flex: 2;
 }
 
+/* Styling the footer */
 footer {
   margin-top: 10px;
 }
 
 /* Table styling */
 
+/* Styling for tables, including width, background color, and border collapse */
 table {
   width: 100%;
   background-color: #dde;
   border-collapse: collapse;
 }
 
+/* Styling for table headers and data cells */
 th, td {
   padding: 10px;
 }
 
+/* Centering text in data cells */
 td {
   text-align: center;
 }
 
+/* Adding a bottom border to table headers */
 th[scope="col"] {
   border-bottom: 1px solid black;
 }
 
+/* Alternating background color for table rows */
 tbody tr:nth-child(odd) {
   background-color: #def;
 }
 
-/* styling content images and audio */
+/* Styling content images and audio */
 
+/* Centering images and audio elements */
 img, audio {
   display: block;
   margin: 0 auto;
 }
 
+/* Setting a fixed width for audio elements */
 audio {
   width: 500px;
 }
 
 /* Comments styling */
 
+/* Styling comments section with a light background and padding */
 .comments {
   background-color: #def;
   padding: 10px;
 }
 
+/* Styling the "Show/Hide" button with a pointer cursor */
 .show-hide {
   cursor: pointer;
 }
 
+/* Styling comments headers with a larger font size */
 .comments h2 {
   font-size: 2rem;
 }
 
+/* Removing margin from the second comments header */
 .comments h2:nth-of-type(2) {
   margin-bottom: 0;
 }
 
+/* Styling the comment form with margin and flex display */
 .comment-form {
   margin-bottom: 3rem;
 }
 
+/* Styling the form fields within the comment form */
 .comment-form .flex-pair {
   display: flex;
   padding: 0 3rem 1rem;
 }
 
+/* Aligning labels to the right and setting flex ratios for input fields */
 .comment-form label {
   align-self: center;
   flex: 2;
@@ -208,34 +240,38 @@ audio {
   flex: 6;
 }
 
-
-
+/* Styling the font size and line height of form elements and "Show/Hide" button */
 .comment-form input, .comment-form label, .show-hide {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
+/* Styling the submit button and "Show/Hide" button with a dark background and white text */
 .comment-form input[type="submit"], .show-hide {
   background: #333;
   border: 0;
   color: white;
 }
 
+/* Styling the width, display, and margin of the submit button */
 .comment-form input[type="submit"] {
   width: 30%;
   display: block;
   margin: 0 auto;
 }
 
+/* Styling the comment container with top margin */
 .comment-container {
   margin-top: 0;
 }
 
+/* Styling list items within the comment container with flex display */
 .comment-container li {
   list-style-type: none;
   display: flex;
 }
 
+/* Styling the name and comment paragraphs within each comment item */
 .comment-container li p:nth-child(1) {
   flex: 1;
   font-weight: bold;
